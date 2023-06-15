@@ -1679,7 +1679,6 @@ input, select, textarea {
 	form textarea {
 		display: block;
 		border-radius: 0.4em;
-		-webkit-appearance: none;
 		border: solid 1px #ddd;
 		padding: 0.5em 0.75em;
 		width: 100%;
@@ -1695,7 +1694,7 @@ input, select, textarea {
 		}
 
 	form ::-webkit-input-placeholder {
-		color: #aaa;
+		color: #c94663;
 	}
 
 	form :-moz-placeholder {
@@ -1880,7 +1879,7 @@ input, select, textarea {
 			display: inline-block;
 			width: 1.5em;
 			text-align: center;
-			margin: 0 0.4em 0 0;
+			margin: 0 0.4e0 0 0;
 		}
 
 		.pagination .pages a {
@@ -1891,7 +1890,7 @@ input, select, textarea {
 			color: inherit;
 			background-color: #e8e8e8;
 			background-image: url("images/bg02.png");
-			color: #565656;
+			color: #c94663;
 			margin: 0 0.4em 0 0;
 			border-radius: 0.4em;
 			-moz-transition: background-color .25s ease-in-out;
@@ -2254,7 +2253,7 @@ input, select, textarea {
 				position: absolute;
 				top: 7px;
 				font-size: 14px;
-				width: 50px;
+				width: 44px;
 				height: 30px;
 				line-height: 30px;
 				background: #c94663 url("images/bg01.png");
@@ -2505,7 +2504,7 @@ input, select, textarea {
 
 				#logo a {
 					display: block;
-					background-color: #c94663;
+					background-color: rgba(255, 255, 255, 0.15);
 					background-image: url("images/bg01.png");
 					padding: 0.875em 0.25em;
 					border-radius: 0.2em;
@@ -3009,3 +3008,14 @@ input, select, textarea {
 			}
 
 	}
+	.image-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-container img {
+  width: 50%; /* Adjust the width as needed */
+  height: auto;
+  border: 5px solid #364050; /* Add the border style */
+  margin-right: 10px; /* Add right margin for spacing */
+}
